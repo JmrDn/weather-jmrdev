@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
 
 function App() {
-  const [inputLocation, setInputLocation] = useState('manila');
+  const [inputLocation, setInputLocation] = useState('manilAs');
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(true);
   const [isLocationExist, setIsLocationExist] = useState(true);
@@ -36,6 +36,7 @@ function App() {
         setIsLocationExist(false);
       } finally {
         setLoading(false);
+        
       }
     };
 
