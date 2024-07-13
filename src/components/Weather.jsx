@@ -82,9 +82,10 @@ const Weather = ({ weather, isLocationExist }) => {
 
             </div>
           </div>
-        </div>) :
+        </div>) 
+        :
         (<div className='flex flex-col items-center '>
-          <img src={NoLocation} alt="Cloudy" className="w-[200px] h-[200px] " />
+          <img src={NoLocation} alt="Cloudy" className="w-[200px] h-[200px] mt-10 " />
           <div className='text-2xl md:text-4xl text-white  my-8 font-kanit '>No location found</div>
         </div>)}      
     </div>
