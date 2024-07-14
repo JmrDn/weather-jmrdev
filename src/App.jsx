@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
 
 function App() {
-  const [inputLocation, setInputLocation] = useState('manilAs');
+  const [inputLocation, setInputLocation] = useState('manila');
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(true);
   const [isLocationExist, setIsLocationExist] = useState(true);
@@ -71,7 +71,7 @@ function App() {
               type="text"
               className="font-kanit text-white w-full h-full px-10 bg-input-bg absolute rounded-lg inset-0 border border-[#303030] focus:border-yellow-400 focus:outline-none"
               placeholder="Enter your location"
-
+              value={inputLocation}
               onChange={(e) => setInputLocation(e.target.value)}
               onKeyDown={location}
             // Add this line to keep the input value controlled
